@@ -2,14 +2,13 @@
 
 We're currently working on proper support for the format on Android.
 
-### Using `.lottie` right now
+## Using `.lottie` right now
 
-In the meantime, you can start using `.lottie` files in your projects by using the drop-in 
-replacement `DotLottieCompositionFactory` instead of `LottieCompositionFactory` provided by
+In the meantime, you can use the patched version of `LottieCompositionFactory` 
 the [lottie-android](https://github.com/airbnb/lottie-android) library.
 
-copy or clone the file [DotLottieCompositionFactory.java](./DotLottieCompositionFactory.java)
-into your project, and use it as you would normally use `LottieCompositionFactory`.
+Copy or clone the file [DotLottieCompositionFactory.java](./DotLottieCompositionFactory.java)
+into your project, and replace instances of `LottieCompositionFactory` with `DotLottieCompositionFactory`
 
 
 ```java
@@ -25,4 +24,5 @@ DotLottieCompositionFactory.fromRawRes(this, R.raw.lottie_resource)
 
 #### Caveats
 
-* currently only accepts single animations
+* Currently only accepts single animations.
+* No support for setting animations in XML yet.
