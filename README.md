@@ -1,8 +1,8 @@
 ## dotlottie-android Support
 
-We're currently working on proper support for the format on Android.
+We're currently working on support for Android.
 
-## Using `.lottie` right now
+## Using dotLottie right now
 
 In the meantime, you can use the patched version of `LottieCompositionFactory` 
 the [lottie-android](https://github.com/airbnb/lottie-android) library.
